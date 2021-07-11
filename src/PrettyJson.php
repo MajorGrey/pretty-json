@@ -1,9 +1,9 @@
 <?php
 
 /**
- * MajorGrey PrettyJson library
+ * MajorGrey PrettyJson
  * 
- * https://jdelta.github.io/pretty-json
+ * https://github.com/MajorGrey/pretty-json
  * Version 1.0
  * 
  * Copyright 2021, Chuks Okwuenu
@@ -18,7 +18,8 @@ class PrettyJson
     public static function print($json, $json_attribute_color = '#000', $value_attribute_color = '#0B7500')
     {
         $output = self::loop_json($json, $json_attribute_color, $value_attribute_color);
-        return $output;
+        $pretty_json = stripcslashes($output);
+        return $pretty_json;
     }
 
     private static function loop_json($json,  $json_attribute_color, $value_attribute_color)
@@ -76,6 +77,6 @@ class PrettyJson
         }
         $data .=  "</pre>";
 
-        return stripcslashes($data);
+        return $data;
     }
 }
