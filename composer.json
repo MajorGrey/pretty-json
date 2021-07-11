@@ -1,7 +1,7 @@
 {
     "name": "majorgrey/pretty_json",
     "type": "library",
-    "description": "Display pretty JSON",
+    "description": "JSON pretty print for PHP",
     "keywords": ["json", "json_encode",  "json_decode", "JSON_PRETTY_PRINT", "pretty", "print", "prettyprint"],
     "license": "MIT",
     "authors": [
