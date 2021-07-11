@@ -4,8 +4,15 @@ require_once('src/PrettyJson.php');
 
 use MajorGrey\PrettyJson;
 
-$arry = [ "name" => "majorgrey", 'email' => "chuksjimg@gmail.com", 'metadata' => ['color' => 'blue', 'food' => 'rice'] ];
-$json = json_encode($arry);
+$array = array(
+     "name" => "majorgrey", 
+     'email' => "chuksjimg@gmail.com", 
+     'metadata' => array (
+         'color' => 'blue', 
+         'food' => 'rice'
+     ) 
+);
+$json = json_encode($array);
 
-$pjson = PrettyJson::print($json);
-echo $pjson;
+$pretty_json = PrettyJson::print($json);
+echo $pretty_json;
