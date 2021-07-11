@@ -15,7 +15,7 @@ namespace MajorGrey;
 class PrettyJson
 {
 
-    public static function prettyprint($json, $json_attribute_color = 'red', $value_attribute_color = 'blue')
+    public static function print($json, $json_attribute_color = '#000', $value_attribute_color = '#0B7500')
     {
         $output = self::loop_json($json, $json_attribute_color, $value_attribute_color);
         return $output;

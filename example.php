@@ -7,5 +7,5 @@ use MajorGrey\PrettyJson;
 $arry = [ "name" => "majorgrey", 'email' => "chuksjimg@gmail.com", 'metadata' => ['color' => 'blue', 'food' => 'rice'] ];
 $json = json_encode($arry);
 
-$pjson = PrettyJson::prettyprint($json);
+$pjson = PrettyJson::print($json);
 echo $pjson;
